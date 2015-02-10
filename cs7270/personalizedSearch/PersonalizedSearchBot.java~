@@ -19,15 +19,15 @@ public class PersonalizedSearchBot  {
     public static void main(String[] args) {
 
 	//Get the search, username and password
-	final String searchTerm = JOptionPane.showInputDialog("Enter search term");
-	final String userName = JOptionPane.showInputDialog("Enter username");
+	String searchTerm = JOptionPane.showInputDialog("Enter search term");
+	String userName = JOptionPane.showInputDialog("Enter username");
 	JPanel panel = new JPanel();
 	JLabel label = new JLabel("Enter a password:");
 	JPasswordField pass = new JPasswordField(20);
 	panel.add(label);
 	panel.add(pass);
 	JOptionPane.showMessageDialog(null, panel);
-	final String password = new String(pass.getPassword());
+	String password = new String(pass.getPassword());
 
         // Create a new instance of the Firefox driver
         // Notice that the remainder of the code relies on the interface, 
