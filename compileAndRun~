@@ -1,0 +1,3 @@
+javac -d ./build -cp "./libs/selenium-2.44.0/*:./libs/selenium-2.44.0/libs/*" ./cs7270/personalizedSearch/PersonalizedSearchBot.java
+java -cp "./libs/selenium-2.44.0/*:./libs/selenium-2.44.0/libs/*:./build:." cs7270.personalizedSearch.PersonalizedSearchBot
+
