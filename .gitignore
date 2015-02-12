@@ -3,3 +3,5 @@ PersonalizedSearchBot.iml
 
 .classpath
 .project
+
+*.class
