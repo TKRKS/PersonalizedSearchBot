@@ -14,17 +14,13 @@ import javax.swing.*;
 public class PersonalizedSearchBot {
 
     public static void main(String[] args) {
-
         //Get the search, username and password
-        final String searchTerm = JOptionPane.showInputDialog("Enter search term");
-        final String userName = JOptionPane.showInputDialog("Enter username");
-        JPanel panel = new JPanel();
-        JLabel label = new JLabel("Enter a password:");
-        JPasswordField pass = new JPasswordField(20);
-        panel.add(label);
-        panel.add(pass);
-        JOptionPane.showMessageDialog(null, panel);
-        final String password = new String(pass.getPassword());
+        final String searchTerm = JOptionPane.showInputDialog(null, "Enter search term");
+        final boolean usePersonalizedSearch =
+                JOptionPane.OK_OPTION == JOptionPane.showConfirmDialog(
+                        null, "Use personalized search?", "Use personalized search?",
+                        JOptionPane.YES_NO_OPTION
+                );
 
         // Create a new instance of the Firefox driver
         // Notice that the remainder of the code relies on the interface, 
@@ -33,11 +29,8 @@ public class PersonalizedSearchBot {
 
         // And now use this to visit Google
         driver.get("http://www.google.com");
-        if ((!userName.isEmpty() && !password.isEmpty())) {
+        if (usePersonalizedSearch) {
             driver.findElement(By.xpath("//a[text()='Sign in']")).click();
-            driver.findElement(By.name("Email")).sendKeys(userName);
-            driver.findElement(By.name("Passwd")).sendKeys(password);
-            driver.findElement(By.name("signIn")).click();
         }
 
         // If using Google two factor, this will wait for the search page.
@@ -63,7 +56,7 @@ public class PersonalizedSearchBot {
         // Wait for the page to load, timeout after 10 seconds
         (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
             @Override public Boolean apply(WebDriver d) {
-                return d.getTitle().toLowerCase().startsWith(searchTerm);
+                return d.getTitle().startsWith(searchTerm);
             }
         });
 
