@@ -1,6 +1,5 @@
 package cs7270.personalizedSearch;
 
-import org.apache.xpath.SourceTree;
 import org.openqa.selenium.By;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
