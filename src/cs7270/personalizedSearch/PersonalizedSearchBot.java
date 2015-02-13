@@ -1,6 +1,8 @@
 package cs7270.personalizedSearch;
 
+import org.apache.xpath.SourceTree;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -35,7 +37,8 @@ public class PersonalizedSearchBot {
 
         // If using Google two factor, this will wait for the search page.
         new WebDriverWait(driver, 300).until(new ExpectedCondition<Boolean>() {
-            @Override public Boolean apply(WebDriver webDriver) {
+            @Override
+            public Boolean apply(WebDriver webDriver) {
                 return driver.getTitle().toLowerCase().equals("google");
             }
         });
@@ -52,29 +55,35 @@ public class PersonalizedSearchBot {
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
 
-        // Google's search is rendered dynamically with JavaScript.
-        // Wait for the page to load, timeout after 10 seconds
-        (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-            @Override public Boolean apply(WebDriver d) {
-                return d.getTitle().startsWith(searchTerm);
-            }
-        });
+        //Read the first 5 pages
+        for (int i = 0; i < 5; i++) {
+            (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
+                public Boolean apply(WebDriver d) {
+                    return d.getTitle().startsWith(searchTerm);
+                }
+            });
 
-	//Read the first 5 pages
-	for (int i = 0; i < 5; i++) {
-		//Go to the next page
-		driver.findElement(By.id("pnnext")).click();
-		(new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-        		public Boolean apply(WebDriver d) {
-                		return d.getTitle().toLowerCase().startsWith(searchTerm);
-			}
-		});
-	}
+            //Go to the next page
+            WebElement nextLink = driver.findElement(By.id("pnnext"));
+            nextLink.click();
+
+            //Hack to get the bot to wait for the next page to load before continuing.
+            while(true) {
+                try {
+                    nextLink.findElement(By.id("doesnt-exist"));
+                } catch (StaleElementReferenceException e) {
+                    break;
+                } catch (Exception e) {}
+                try {
+                    Thread.sleep(5);
+                } catch (InterruptedException e) {}
+            }
+        }
 
         // Should see: "cheese! - Google Search"
         System.out.println("Page title is: " + driver.getTitle());
 
         //Close the browser
-        driver.quit();
+        //driver.quit();
     }
 }
