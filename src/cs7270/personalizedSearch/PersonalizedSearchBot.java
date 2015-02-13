@@ -87,6 +87,6 @@ public class PersonalizedSearchBot {
         System.out.println("Page title is: " + driver.getTitle());
 
         //Close the browser
-        //driver.quit();
+        driver.quit();
     }
 }
