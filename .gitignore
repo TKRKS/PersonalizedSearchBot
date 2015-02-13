@@ -1,7 +1,14 @@
+# IntelliJ files
 .idea/
 PersonalizedSearchBot.iml
 
+# Eclipse files
 .classpath
 .project
 
+# Binary Files
 *.class
+
+# Lock files
+*.swp
+*~
