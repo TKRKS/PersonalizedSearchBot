@@ -54,19 +54,23 @@ public class PersonalizedSearchBot {
         // Check the title of the page
         System.out.println("Page title is: " + driver.getTitle());
 
+        (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver d) {
+                return d.getTitle().startsWith(searchTerm);
+            }
+        });
+
         //Read the first 5 pages
         for (int i = 0; i < 5; i++) {
-            (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-                public Boolean apply(WebDriver d) {
-                    return d.getTitle().startsWith(searchTerm);
-                }
-            });
+            //TODO: Do bot stuff for this page
 
             //Go to the next page
             WebElement nextLink = driver.findElement(By.id("pnnext"));
             nextLink.click();
 
-            //Hack to get the bot to wait for the next page to load before continuing.
+            // HACK: to get the bot to wait for the next page to load before continuing.
+            // StaleElementReferenceException is thrown if nextLink is no longer in the
+            // DOM which happens when the new page is in the DOM instead.
             while(true) {
                 try {
                     nextLink.findElement(By.id("doesnt-exist"));
