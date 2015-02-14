@@ -49,7 +49,6 @@ public class PersonalizedSearchBot {
     }
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
-
         final int pages = 5;
         List<Result> results = new ArrayList<Result>();
 
@@ -97,7 +96,7 @@ public class PersonalizedSearchBot {
         int rank = 1;
         for (int i = 0; i < pages; i++) {
             if (i != 0) {
-                //Wait for new page to laod
+                //Wait for new page to load
                 final int nextPageNum = i + 1;
                 (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
                     public Boolean apply(WebDriver d) {
@@ -119,22 +118,6 @@ public class PersonalizedSearchBot {
             //Go to the next page
             WebElement nextLink = driver.findElement(By.id("pnnext"));
             nextLink.click();
-
-            // HACK: to get the bot to wait for the next page to load before continuing.
-            // StaleElementReferenceException is thrown if nextLink is no longer in the
-            // DOM which happens when the new page is in the DOM instead.
-            while (true) {
-                try {
-                    nextLink.findElement(By.id("doesnt-exist"));
-                } catch (StaleElementReferenceException e) {
-                    break;
-                } catch (Exception e) {
-                }
-                try {
-                    Thread.sleep(5);
-                } catch (InterruptedException e) {
-                }
-            }
         }
 
         //Write elements to CSV
