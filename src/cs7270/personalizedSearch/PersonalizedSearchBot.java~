@@ -1,6 +1,7 @@
 package cs7270.personalizedSearch;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -54,22 +55,33 @@ public class PersonalizedSearchBot {
 
         //Get the search, username and password
         final String searchTerm = JOptionPane.showInputDialog("Enter search term");
-        String userName = JOptionPane.showInputDialog("Enter username");
-        JPanel panel = new JPanel();
-        JLabel label = new JLabel("Enter a password:");
-        JPasswordField pass = new JPasswordField(20);
-        panel.add(label);
-        panel.add(pass);
-        JOptionPane.showMessageDialog(null, panel);
-        String password = new String(pass.getPassword());
+	String userName;
+	String password;
+        final boolean usePersonalizedSearch =
+                JOptionPane.OK_OPTION == JOptionPane.showConfirmDialog(
+                        null, "Use personalized search?", "Use personalized search?",
+                        JOptionPane.YES_NO_OPTION
+                );
+	if (usePersonalizedSearch) {
+		userName = JOptionPane.showInputDialog("Enter username");
+		JPanel panel = new JPanel();
+		JLabel label = new JLabel("Enter a password:");
+		JPasswordField pass = new JPasswordField(20);
+		panel.add(label);
+		panel.add(pass);
+		JOptionPane.showMessageDialog(null, panel);
+		password = new String(pass.getPassword());
+	}
+
 
         // Firefox driver since Chrome driver requires extra work
         final WebDriver driver = new FirefoxDriver();
 
 	//Go to google
         driver.get("http://www.google.com");
+
 	//Login if necessary
-        if ((!userName.isEmpty() && !password.isEmpty())) {
+        if (usePersonalizedSearch && !userName.isEmpty() && !password.isEmpty()) {
             driver.findElement(By.xpath("//a[text()='Sign in']")).click();
             driver.findElement(By.name("Email")).sendKeys(userName);
             driver.findElement(By.name("Passwd")).sendKeys(password);
@@ -79,7 +91,8 @@ public class PersonalizedSearchBot {
 	}
 
         new WebDriverWait(driver, 300).until(new ExpectedCondition<Boolean>() {
-            @Override public Boolean apply(WebDriver webDriver) {
+            @Override
+            public Boolean apply(WebDriver webDriver) {
                 return driver.getTitle().toLowerCase().equals("google");
             }
         });
@@ -125,9 +138,9 @@ public class PersonalizedSearchBot {
 	//Write elements to CSV
 	String fileName = searchTerm + userName + ".csv";
 	PrintWriter output = new PrintWriter(searchTerm + userName + ".csv", "UTF-8");
-	output.println("Url,Title,Rank");
+	output.println("Url;Title;Rank");
 	for (Result result : results) {
-		output.println(result.getUrl() + "," + result.getTitle() + "," + result.getResult());
+		output.println(result.getUrl() + ";" + result.getTitle() + ";" + result.getResult());
 	}
 	output.close();
         driver.quit();
