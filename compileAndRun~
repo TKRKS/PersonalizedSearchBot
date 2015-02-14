@@ -1,8 +1,0 @@
-<<<<<<< HEAD
-javac -d ./build -cp "./libs/selenium-2.44.0/*:./libs/selenium-2.44.0/libs/*" ./src/cs7270/personalizedSearch/PersonalizedSearchBot.java
-java -cp "./libs/selenium-2.44.0/*:./libs/selenium-2.44.0/libs/*:./build:." cs7270.personalizedSearch.PersonalizedSearchBot
-
-=======
-./compile
-./run
->>>>>>> d53e60f35461e0664a488dff3913e63f65a04fab
