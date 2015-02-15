@@ -9,9 +9,16 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
+import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
+import java.nio.file.Paths;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import javax.swing.*;
@@ -19,9 +26,10 @@ import javax.swing.*;
 public class PersonalizedSearchBot {
 
     private static class Result {
-        private String url;
-        private String title;
-        private String result;
+        private String url = "";
+        private String title = "";
+        private List<String> ranks = new ArrayList<String>();
+	private String relevence = "";
 
         public String getUrl() {
             return url;
@@ -39,16 +47,30 @@ public class PersonalizedSearchBot {
             this.title = title;
         }
 
-        public String getResult() {
-            return result;
+        public List<String> getRanks() {
+            return ranks;
         }
 
-        public void setResult(final String result) {
-            this.result = result;
+        public void setRanks(final List<String> ranks) {
+            this.ranks = ranks;
+        }
+
+        public void addRank(final String rank) {
+            this.ranks.add(rank);
+        }
+
+        public String getRelevence() {
+            return relevence;
+        }
+
+        public void setRelevence(final String relevence) {
+            this.relevence = relevence;
         }
     }
+	
+    private static SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 
-    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException {
+    public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException, IOException {
         final int pages = 5;
         List<Result> results = new ArrayList<Result>();
 
@@ -82,7 +104,7 @@ public class PersonalizedSearchBot {
             driver.findElement(By.name("Email")).sendKeys(userName);
             driver.findElement(By.name("Passwd")).sendKeys(password);
             driver.findElement(By.name("signIn")).click();
-		suffix = "Personalized";
+	    suffix = "Personalized";
         }
 
         // Wait for sign in and any 2-fac
@@ -121,9 +143,9 @@ public class PersonalizedSearchBot {
             List<WebElement> resultElements = driver.findElements(By.xpath("//div[@class = 'srg']/li[@class = 'g']/div[@class = 'rc']/h3/a"));
             for (WebElement resultElement : resultElements) {
                 Result result = new Result();
-                result.setUrl(resultElement.getAttribute("href"));
+                result.setUrl(resultElement.getAttribute("href").trim());
                 result.setTitle(resultElement.getText());
-                result.setResult(Integer.toString(rank));
+                result.addRank(Integer.toString(rank));
                 results.add(result);
                 rank++;
             }
@@ -133,12 +155,86 @@ public class PersonalizedSearchBot {
             nextLink.click();
         }
 
-        //Write elements to CSV
+	//Read from existing CSV if possible
         String fileName = searchTerm + suffix + ".csv";
+	List<Result> existingResults = new ArrayList<Result>();
+	int ranks = 0;
+	boolean firstResult = true;
+	List<String> titles = new ArrayList<String>();
+	try {
+	    for (String line : Files.readAllLines(Paths.get(fileName), Charset.forName("UTF-8"))) {
+		if (firstResult) {
+	            //Line titles
+	            firstResult = false;
+	            for (String part : line.split(";")) {
+	                titles.add(part);
+	            }
+	            titles.add(dateFormat.format(new Date()));
+		} else {
+	            //Read line of existing results
+	            Result result = new Result();
+	            String[] parts = line.split(";");
+	            result.setRelevence(parts[0]);
+	            result.setUrl(parts[1]);
+	            result.setTitle(parts[2]);
+	            for (int i = 3; i < parts.length; i++) {
+	                result.addRank(parts[i]);
+	            }
+	            if (ranks == 0) {
+	                ranks = parts.length - 3;
+	            }
+	            existingResults.add(result);
+		}
+	    }
+	} catch (NoSuchFileException e) {
+		//Create new titles
+		titles.add("Relevence");
+		titles.add("Url");
+		titles.add("Title");
+		titles.add(dateFormat.format(new Date()));
+	}
+	//Add current results as necessary
+	for (Result result : results) {
+	    boolean resultFound = false;
+	    for (Result existingResult : existingResults) {
+	        if (existingResult.getUrl().equals(result.getUrl())) {
+	            //Update existing result
+	            resultFound = true;
+	            existingResult.addRank(result.getRanks().get(0));
+	            break;
+	        }
+	    }
+	    if (!resultFound) {
+		//Add new results
+	        String newRank = result.getRanks().get(0);
+	        result.setRanks(new ArrayList<String>());
+		for (int i = 0; i < ranks; i++) {
+	            result.addRank("N/A");	
+		}
+		result.addRank(newRank);
+		existingResults.add(result);
+	    }
+	}
+
+	//Update exsting results that fell off top 50
+	for (Result existingResult : existingResults) {
+	    if (existingResult.getRanks().size() < (ranks + 1)) {
+	        existingResult.addRank("N/A");
+	    }
+	}
+
+        //Write elements to CSV
         PrintWriter output = new PrintWriter(fileName, "UTF-8");
-        output.println("Url;Title;Rank");
-        for (Result result : results) {
-            output.println(result.getUrl() + ";" + result.getTitle() + ";" + result.getResult());
+	for (String title : titles) {
+	    output.print(title + ";");
+	}
+	output.println("");
+        for (Result result : existingResults) {
+	    String line = result.getRelevence() + ";" + result.getUrl() + ";" + result.getTitle() + ";";
+	    for (String rankString : result.getRanks()) {
+	        line = line + rankString + ";";
+	    }
+            output.println(line);
         }
         output.close();
         driver.quit();
