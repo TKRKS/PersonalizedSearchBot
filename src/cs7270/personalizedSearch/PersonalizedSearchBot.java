@@ -1,13 +1,13 @@
 package cs7270.personalizedSearch;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.swing.*;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -21,15 +21,13 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import javax.swing.*;
-
 public class PersonalizedSearchBot {
 
     private static class Result {
         private String url = "";
         private String title = "";
         private List<String> ranks = new ArrayList<String>();
-	private String relevence = "";
+        private String relevence = "";
 
         public String getUrl() {
             return url;
@@ -67,7 +65,7 @@ public class PersonalizedSearchBot {
             this.relevence = relevence;
         }
     }
-	
+
     private static SimpleDateFormat dateFormat = new SimpleDateFormat("MM/dd/yyyy");
 
     public static void main(String[] args) throws FileNotFoundException, UnsupportedEncodingException, IOException {
@@ -76,19 +74,11 @@ public class PersonalizedSearchBot {
 
         //Get the search, username and password
         final String searchTerm = JOptionPane.showInputDialog(null, "Enter search term");
-        final String userName = JOptionPane.showInputDialog("Enter username");
-	JPanel panel = new JPanel();
-	JLabel label = new JLabel("Enter a password:");
-	JPasswordField pass = new JPasswordField(20);
-	panel.add(label);
-	panel.add(pass);
-	JOptionPane.showMessageDialog(null, panel);
-	final String password = new String(pass.getPassword());
-//        final boolean usePersonalizedSearch =
-//                JOptionPane.OK_OPTION == JOptionPane.showConfirmDialog(
-//                        null, "Use personalized search?", "Use personalized search?",
-//                        JOptionPane.YES_NO_OPTION
-//                );
+        final boolean usePersonalizedSearch =
+                JOptionPane.OK_OPTION == JOptionPane.showConfirmDialog(
+                        null, "Use personalized search?", "Use personalized search?",
+                        JOptionPane.YES_NO_OPTION
+                );
 
 
         // Firefox driver since Chrome driver requires extra work
@@ -97,14 +87,10 @@ public class PersonalizedSearchBot {
         //Go to google
         driver.get("http://www.google.com");
 
-	String suffix = "NonPersonalized";
-        if (userName != null && !userName.isEmpty() && password != null && !password.isEmpty()) {
+        String suffix = "NonPersonalized";
+        if (usePersonalizedSearch) {
             driver.findElement(By.xpath("//a[text()='Sign in']")).click();
-            driver.findElement(By.name("Email"));
-            driver.findElement(By.name("Email")).sendKeys(userName);
-            driver.findElement(By.name("Passwd")).sendKeys(password);
-            driver.findElement(By.name("signIn")).click();
-	    suffix = "Personalized";
+            suffix = "Personalized";
         }
 
         // Wait for sign in and any 2-fac
@@ -155,85 +141,85 @@ public class PersonalizedSearchBot {
             nextLink.click();
         }
 
-	//Read from existing CSV if possible
+        //Read from existing CSV if possible
         String fileName = searchTerm + suffix + ".csv";
-	List<Result> existingResults = new ArrayList<Result>();
-	int ranks = 0;
-	boolean firstResult = true;
-	List<String> titles = new ArrayList<String>();
-	try {
-	    for (String line : Files.readAllLines(Paths.get(fileName), Charset.forName("UTF-8"))) {
-		if (firstResult) {
-	            //Line titles
-	            firstResult = false;
-	            for (String part : line.split(";")) {
-	                titles.add(part);
-	            }
-	            titles.add(dateFormat.format(new Date()));
-		} else {
-	            //Read line of existing results
-	            Result result = new Result();
-	            String[] parts = line.split(";");
-	            result.setRelevence(parts[0]);
-	            result.setUrl(parts[1]);
-	            result.setTitle(parts[2]);
-	            for (int i = 3; i < parts.length; i++) {
-	                result.addRank(parts[i]);
-	            }
-	            if (ranks == 0) {
-	                ranks = parts.length - 3;
-	            }
-	            existingResults.add(result);
-		}
-	    }
-	} catch (NoSuchFileException e) {
-		//Create new titles
-		titles.add("Relevence");
-		titles.add("Url");
-		titles.add("Title");
-		titles.add(dateFormat.format(new Date()));
-	}
-	//Add current results as necessary
-	for (Result result : results) {
-	    boolean resultFound = false;
-	    for (Result existingResult : existingResults) {
-	        if (existingResult.getUrl().equals(result.getUrl())) {
-	            //Update existing result
-	            resultFound = true;
-	            existingResult.addRank(result.getRanks().get(0));
-	            break;
-	        }
-	    }
-	    if (!resultFound) {
-		//Add new results
-	        String newRank = result.getRanks().get(0);
-	        result.setRanks(new ArrayList<String>());
-		for (int i = 0; i < ranks; i++) {
-	            result.addRank("N/A");	
-		}
-		result.addRank(newRank);
-		existingResults.add(result);
-	    }
-	}
+        List<Result> existingResults = new ArrayList<Result>();
+        int ranks = 0;
+        boolean firstResult = true;
+        List<String> titles = new ArrayList<String>();
+        try {
+            for (String line : Files.readAllLines(Paths.get(fileName), Charset.forName("UTF-8"))) {
+                if (firstResult) {
+                    //Line titles
+                    firstResult = false;
+                    for (String part : line.split(";")) {
+                        titles.add(part);
+                    }
+                    titles.add(dateFormat.format(new Date()));
+                } else {
+                    //Read line of existing results
+                    Result result = new Result();
+                    String[] parts = line.split(";");
+                    result.setRelevence(parts[0]);
+                    result.setUrl(parts[1]);
+                    result.setTitle(parts[2]);
+                    for (int i = 3; i < parts.length; i++) {
+                        result.addRank(parts[i]);
+                    }
+                    if (ranks == 0) {
+                        ranks = parts.length - 3;
+                    }
+                    existingResults.add(result);
+                }
+            }
+        } catch (NoSuchFileException e) {
+            //Create new titles
+            titles.add("Relevence");
+            titles.add("Url");
+            titles.add("Title");
+            titles.add(dateFormat.format(new Date()));
+        }
+        //Add current results as necessary
+        for (Result result : results) {
+            boolean resultFound = false;
+            for (Result existingResult : existingResults) {
+                if (existingResult.getUrl().equals(result.getUrl())) {
+                    //Update existing result
+                    resultFound = true;
+                    existingResult.addRank(result.getRanks().get(0));
+                    break;
+                }
+            }
+            if (!resultFound) {
+                //Add new results
+                String newRank = result.getRanks().get(0);
+                result.setRanks(new ArrayList<String>());
+                for (int i = 0; i < ranks; i++) {
+                    result.addRank("N/A");
+                }
+                result.addRank(newRank);
+                existingResults.add(result);
+            }
+        }
 
-	//Update exsting results that fell off top 50
-	for (Result existingResult : existingResults) {
-	    if (existingResult.getRanks().size() < (ranks + 1)) {
-	        existingResult.addRank("N/A");
-	    }
-	}
+        //Update exsting results that fell off top 50
+        for (Result existingResult : existingResults) {
+            if (existingResult.getRanks().size() < (ranks + 1)) {
+                existingResult.addRank("N/A");
+            }
+        }
 
         //Write elements to CSV
         PrintWriter output = new PrintWriter(fileName, "UTF-8");
-	for (String title : titles) {
-	    output.print(title + ";");
-	}
-	output.println("");
+        for (String title : titles) {
+            output.print(title + ";");
+        }
+        output.println("");
         for (Result result : existingResults) {
-	    String line = result.getRelevence() + ";" + result.getUrl() + ";" + result.getTitle() + ";";
-	    for (String rankString : result.getRanks()) {
-	        line = line + rankString + ";";
-	    }
+            String line = result.getRelevence() + ";" + result.getUrl() + ";" + result.getTitle() + ";";
+            for (String rankString : result.getRanks()) {
+                line = line + rankString + ";";
+            }
             output.println(line);
         }
         output.close();
