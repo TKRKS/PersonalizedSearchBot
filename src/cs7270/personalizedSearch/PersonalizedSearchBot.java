@@ -109,7 +109,8 @@ public class PersonalizedSearchBot {
         // Wait for Google to load
         (new WebDriverWait(driver, 30)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
-                return d.getTitle().startsWith(searchTerm);
+                return d.getTitle().startsWith(searchTerm)
+                        && d.findElement(By.id("resultStats")).getText().contains("About");
             }
         });
 
