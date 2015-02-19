@@ -27,7 +27,7 @@ public class PersonalizedSearchBot {
         private String url = "";
         private String title = "";
         private List<String> ranks = new ArrayList<String>();
-        private String relevence = "";
+        private String relevance = "";
 
         public String getUrl() {
             return url;
@@ -57,12 +57,12 @@ public class PersonalizedSearchBot {
             this.ranks.add(rank);
         }
 
-        public String getRelevence() {
-            return relevence;
+        public String getRelevance() {
+            return relevance;
         }
 
-        public void setRelevence(final String relevence) {
-            this.relevence = relevence;
+        public void setRelevance(final String relevance) {
+            this.relevance = relevance;
         }
     }
 
@@ -161,7 +161,7 @@ public class PersonalizedSearchBot {
                     //Read line of existing results
                     Result result = new Result();
                     String[] parts = line.split(";");
-                    result.setRelevence(parts[0]);
+                    result.setRelevance(parts[0]);
                     result.setUrl(parts[1]);
                     result.setTitle(parts[2]);
                     for (int i = 3; i < parts.length; i++) {
@@ -175,7 +175,7 @@ public class PersonalizedSearchBot {
             }
         } catch (NoSuchFileException e) {
             //Create new titles
-            titles.add("Relevence");
+            titles.add("Relevance");
             titles.add("Url");
             titles.add("Title");
             titles.add(dateFormat.format(new Date()));
@@ -217,7 +217,7 @@ public class PersonalizedSearchBot {
         }
         output.println("");
         for (Result result : existingResults) {
-            String line = result.getRelevence() + ";" + result.getUrl() + ";" + result.getTitle() + ";";
+            String line = result.getRelevance() + ";" + result.getUrl() + ";" + result.getTitle() + ";";
             for (String rankString : result.getRanks()) {
                 line = line + rankString + ";";
             }
