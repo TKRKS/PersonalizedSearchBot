@@ -1,49 +1,54 @@
-Relevance;Url;Title;02/21/2015;02/22/2015
-5;http://www.weather.gov/;National Weather Service;1;1
-5;http://www.wunderground.com/;Weather Underground: Weather Forecast & Reports - Long ...;2;2
-5;http://www.accuweather.com/en/us/alpharetta-ga/30009/weather-forecast/332559;Alpharetta Weather - AccuWeather Forecast for GA 30009;3;3
-4;https://weather.yahoo.com/;Yahoo Weather - Weather Forecasts | Maps | News;4;4
-4;http://www.intellicast.com/;Intellicast - Local and National Weather Forecast, Radar ...;5;5
-4;http://www.cnn.com/weather;Weather - CNN.com;6;6
-4;http://www.noaa.gov/wx.html;Weather - NOAA;7;7
-3;http://www.noaa.gov/;NOAA - National Oceanic and Atmospheric Administration;8;8
-4;http://weather.weatherbug.com/;WeatherBug.com: Local and National Weather Conditions ...;9;9
-5;http://www.wsbtv.com/s/weather/;Metro Atlanta weather forecast and radar | www.wsbtv.com;10;10
-3;https://www.aviationweather.gov/;Aviation Weather Center: AWC;11;11
-2;http://www.bbc.com/weather/;BBC Weather;12;12
-2;https://play.google.com/store/apps/details?id=com.macropinch.swan&hl=en;Weather - Android Apps on Google Play;13;14
-2;http://en.wikipedia.org/wiki/Weather;Weather - Wikipedia, the free encyclopedia;14;15
-4;http://www.usatoday.com/weather/;US and National Weather Forecasts - USATODAY.com;15;13
-2;http://www.kvue.com/weather/;kvue.com | Austin Weather, Forecast, Conditions, Doppler ...;16;18
-2;http://www.wbaltv.com/weather;Baltimore Weather News – Maryland Weather Updates ...;17;17
-1;http://www.wfmz.com/weather;WFMZ Weather | Allentown, Bethlehem, Lehigh Valley ...;18;19
-1;http://www.edheads.org/activities/weather/;Edheads - Weather Activities - Temperature Converter - Kids ...;19;20
-2;http://www.msn.com/en-us/weather;Mountain View, CA - MSN Weather - MSN.com;20;21
-3;http://www.chicagotribune.com/news/weather/;Weather - Chicago Tribune;21;27
-2;http://www.13abc.com/weather;Toledo Weather - 13abc.com Toledo (OH) News, Weather ...;22;23
-2;http://www.weatherwizkids.com/;Weather Wiz Kids weather information for kids;23;25
-2;http://woodtv.com/category/weather/;Grand Rapids weather forecast | WOODTV.com;24;29
-3;http://www.azfamily.com/weather/;azfamily.com | Phoenix 3TV Weather, Doppler Radar ...;25;26
-3;http://www.10tv.com/content/sections/weather/;Doppler 10 Weather - Columbus - WBNS /10tv.com;26;22
-3;http://www.wmur.com/weather;Weather - WMUR.com;27;28
-3;http://fox4kc.com/weather/;Kansas City Weather by fox4kc.com – WDAF Television ...;28;40
-3;http://www.wthr.com/weather;Weather - Indianapolis - WTHR.com;29;37
-3;http://www.whio.com/s/weather/;Dayton Weather | Forecast, Current Conditions & Radar ...;30;31
-3;http://www.ksl.com/?nid=88;KSL Weather Center | KSL.com;31;32
-2;http://www.kcrg.com/weather/;KCRG-TV9 | Cedar Rapids, Iowa News, Sports, and Weather;32;38
-3;http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291477-8696;Weather - Wiley Online Library;33;33
-3;http://fox8.com/weather/;Weather | fox8.com - Cleveland;34;30
-2;http://www.kcci.com/weather;Des Moines Weather News – Iowa Weather Updates – KCCI ...;35;34
-3;http://www.timeanddate.com/weather/;World Temperatures — Weather Around The World;36;36
-1;http://www.spaceweather.com/;SpaceWeather.com -- News and information about meteor ...;37;39
-3;http://www.nbcphiladelphia.com/weather/;Philadelphia Weather, Forecast, Maps and Doppler Radar ...;38;35
-3;http://www.wcvb.com/weather;Weather - WCVB.com;39;43
-2;http://www.ketv.com/weather;Weather - Omaha - KETV.com;40;N/A
-2;http://www.channel3000.com/weather;Madison Weather - Forecast Radar, Madison School ...;41;42
-3;http://www.baynews9.com/Weather.html;Tampa Weather | Klystron 9, Radar, Weather on the Nines;42;44
-1;http://weather.unisys.com/;Unisys Weather;43;45
-2;http://www.wyff4.com/weather;Weather - Greenville - WYFF 4.com;44;N/A
-3;http://wnep.com/weather/;WNEP Weather | WNEP.com;45;N/A
-3;http://www.wcpo.com/weather;Weather - Cincinnati - WCPO.com;N/A;16
-3;http://www.wbir.com/weather/;WBIR.com | Knoxville, TN | Weather;N/A;24
-3;http://www.weatherfrom.com/;Weather From - Weather you need it or not;N/A;41
+Relevance;Url;Title;02/21/2015;02/22/2015;02/24/2015
+5;http://www.weather.gov/;National Weather Service;1;1;1
+5;http://www.wunderground.com/;Weather Underground: Weather Forecast & Reports - Long ...;2;2;2
+5;http://www.accuweather.com/en/us/alpharetta-ga/30009/weather-forecast/332559;Alpharetta Weather - AccuWeather Forecast for GA 30009;3;3;N/A
+4;https://weather.yahoo.com/;Yahoo Weather - Weather Forecasts | Maps | News;4;4;4
+4;http://www.intellicast.com/;Intellicast - Local and National Weather Forecast, Radar ...;5;5;5
+4;http://www.cnn.com/weather;Weather - CNN.com;6;6;8
+4;http://www.noaa.gov/wx.html;Weather - NOAA;7;7;9
+3;http://www.noaa.gov/;NOAA - National Oceanic and Atmospheric Administration;8;8;10
+4;http://weather.weatherbug.com/;WeatherBug.com: Local and National Weather Conditions ...;9;9;11
+5;http://www.wsbtv.com/s/weather/;Metro Atlanta weather forecast and radar | www.wsbtv.com;10;10;6
+3;https://www.aviationweather.gov/;Aviation Weather Center: AWC;11;11;12
+2;http://www.bbc.com/weather/;BBC Weather;12;12;13
+2;https://play.google.com/store/apps/details?id=com.macropinch.swan&hl=en;Weather - Android Apps on Google Play;13;14;14
+2;http://en.wikipedia.org/wiki/Weather;Weather - Wikipedia, the free encyclopedia;14;15;15
+4;http://www.usatoday.com/weather/;US and National Weather Forecasts - USATODAY.com;15;13;16
+2;http://www.kvue.com/weather/;kvue.com | Austin Weather, Forecast, Conditions, Doppler ...;16;18;N/A
+2;http://www.wbaltv.com/weather;Baltimore Weather News – Maryland Weather Updates ...;17;17;18
+1;http://www.wfmz.com/weather;WFMZ Weather | Allentown, Bethlehem, Lehigh Valley ...;18;19;23
+1;http://www.edheads.org/activities/weather/;Edheads - Weather Activities - Temperature Converter - Kids ...;19;20;20
+2;http://www.msn.com/en-us/weather;Mountain View, CA - MSN Weather - MSN.com;20;21;21
+3;http://www.chicagotribune.com/news/weather/;Weather - Chicago Tribune;21;27;26
+2;http://www.13abc.com/weather;Toledo Weather - 13abc.com Toledo (OH) News, Weather ...;22;23;31
+2;http://www.weatherwizkids.com/;Weather Wiz Kids weather information for kids;23;25;25
+2;http://woodtv.com/category/weather/;Grand Rapids weather forecast | WOODTV.com;24;29;22
+3;http://www.azfamily.com/weather/;azfamily.com | Phoenix 3TV Weather, Doppler Radar ...;25;26;27
+3;http://www.10tv.com/content/sections/weather/;Doppler 10 Weather - Columbus - WBNS /10tv.com;26;22;24
+3;http://www.wmur.com/weather;Weather - WMUR.com;27;28;29
+3;http://fox4kc.com/weather/;Kansas City Weather by fox4kc.com – WDAF Television ...;28;40;32
+3;http://www.wthr.com/weather;Weather - Indianapolis - WTHR.com;29;37;38
+3;http://www.whio.com/s/weather/;Dayton Weather | Forecast, Current Conditions & Radar ...;30;31;34
+3;http://www.ksl.com/?nid=88;KSL Weather Center | KSL.com;31;32;42
+2;http://www.kcrg.com/weather/;KCRG-TV9 | Cedar Rapids, Iowa News, Sports, and Weather;32;38;30
+3;http://onlinelibrary.wiley.com/journal/10.1002/%28ISSN%291477-8696;Weather - Wiley Online Library;33;33;33
+3;http://fox8.com/weather/;Weather | fox8.com - Cleveland;34;30;28
+2;http://www.kcci.com/weather;Des Moines Weather News – Iowa Weather Updates – KCCI ...;35;34;43
+3;http://www.timeanddate.com/weather/;World Temperatures — Weather Around The World;36;36;36
+1;http://www.spaceweather.com/;SpaceWeather.com -- News and information about meteor ...;37;39;N/A
+3;http://www.nbcphiladelphia.com/weather/;Philadelphia Weather, Forecast, Maps and Doppler Radar ...;38;35;N/A
+3;http://www.wcvb.com/weather;Weather - WCVB.com;39;43;N/A
+2;http://www.ketv.com/weather;Weather - Omaha - KETV.com;40;N/A;35
+2;http://www.channel3000.com/weather;Madison Weather - Forecast Radar, Madison School ...;41;42;39
+3;http://www.baynews9.com/Weather.html;Tampa Weather | Klystron 9, Radar, Weather on the Nines;42;44;45
+1;http://weather.unisys.com/;Unisys Weather;43;45;N/A
+2;http://www.wyff4.com/weather;Weather - Greenville - WYFF 4.com;44;N/A;41
+3;http://wnep.com/weather/;WNEP Weather | WNEP.com;45;N/A;N/A
+3;http://www.wcpo.com/weather;Weather - Cincinnati - WCPO.com;N/A;16;17
+3;http://www.wbir.com/weather/;WBIR.com | Knoxville, TN | Weather;N/A;24;19
+3;http://www.weatherfrom.com/;Weather From - Weather you need it or not;N/A;41;N/A
+5;http://www.accuweather.com/en/us/atlanta-ga/30303/daily-weather-forecast/348181;Weather in Atlanta - AccuWeather Forecast for GA 30303;N/A;N/A;3
+5;http://www.11alive.com/weather/;Weather | Atlanta News, Weather, Traffic, Sports and ...;N/A;N/A;7
+1;http://www.newschannel10.com/weather;Weather - KFDA - NewsChannel 10 / Amarillo News ...;N/A;N/A;37
+2;http://www.myfoxdetroit.com/weather;Weather - Fox 2 News Headlines;N/A;N/A;40
+2;http://www.learner.org/exhibits/weather/;Exhibits Collection -- Weather;N/A;N/A;44
