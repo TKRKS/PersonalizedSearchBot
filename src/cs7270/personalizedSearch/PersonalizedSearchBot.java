@@ -187,16 +187,16 @@ public class PersonalizedSearchBot {
                 if (existingResult.getUrl().equals(result.getUrl())) {
                     //Update existing result
                     resultFound = true;
-                    existingResult.addRank(result.getRanks().get(0));
+                    existingResult.addRank(Integer.toString(results.size() - (Integer.parseInt(result.getRanks().get(0)) - 1)));
                     break;
                 }
             }
             if (!resultFound) {
                 //Add new results
-                String newRank = result.getRanks().get(0);
+                String newRank = Integer.toString(results.size() - (Integer.parseInt(result.getRanks().get(0)) - 1));
                 result.setRanks(new ArrayList<String>());
                 for (int i = 0; i < ranks; i++) {
-                    result.addRank("N/A");
+                    result.addRank("0");
                 }
                 result.addRank(newRank);
                 existingResults.add(result);
@@ -206,7 +206,7 @@ public class PersonalizedSearchBot {
         //Update exsting results that fell off top 50
         for (Result existingResult : existingResults) {
             if (existingResult.getRanks().size() < (ranks + 1)) {
-                existingResult.addRank("N/A");
+                existingResult.addRank("0");
             }
         }
 
