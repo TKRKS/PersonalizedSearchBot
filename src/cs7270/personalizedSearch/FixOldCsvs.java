@@ -21,7 +21,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class PersonalizedSearchBot {
+public class FixOldCsvs {
 
     private static class Result {
         private String url = "";
@@ -72,7 +72,7 @@ public class PersonalizedSearchBot {
 
 
         //Read from existing CSV if possible
-        String fileName = "trafficNonPersonalized.csv";
+        String fileName = "dummy.csv";
         List<Result> existingResults = new ArrayList<Result>();
         int ranks = 0;
         boolean firstResult = true;
