@@ -1,1 +1,1 @@
-java -cp "./libs/selenium-2.44.0/*:./libs/selenium-2.44.0/libs/*:./build:." cs7270.personalizedSearch.PersonalizedSearchBot
+java -cp "./libs/selenium-2.45.0/*:./libs/selenium-2.45.0/libs/*:./build:." cs7270.personalizedSearch.PersonalizedSearchBot
