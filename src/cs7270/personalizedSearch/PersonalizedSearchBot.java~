@@ -79,7 +79,6 @@ public class PersonalizedSearchBot {
                         null, "Use personalized search?", "Use personalized search?",
                         JOptionPane.YES_NO_OPTION
                 );
-	System.out.println("test");
 
 
         // Firefox driver since Chrome driver requires extra work
