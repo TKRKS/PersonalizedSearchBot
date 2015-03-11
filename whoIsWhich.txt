@@ -4,3 +4,5 @@ Will special- drumming
 Will generic- traffic
 Trey special- nintendo
 Trey generic- weather
+David special- d language
+David generic- local restaurants
