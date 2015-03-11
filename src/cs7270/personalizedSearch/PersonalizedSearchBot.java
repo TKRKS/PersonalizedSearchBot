@@ -122,7 +122,11 @@ public class PersonalizedSearchBot {
                 final int nextPageNum = i + 1;
                 (new WebDriverWait(driver, 30)).until(new ExpectedCondition<Boolean>() {
                     public Boolean apply(WebDriver d) {
-                        return d.findElement(By.id("resultStats")).getText().contains("Page " + (nextPageNum));
+			try {
+                        	return d.findElement(By.id("resultStats")).getText().contains("Page " + (nextPageNum));
+			} catch (Exception e) {
+				return false;			
+			}
                     }
                 });
             }
