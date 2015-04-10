@@ -1,81 +1,81 @@
-Relevance;Url;Title;03/11/2015;03/12/2015;03/23/2015;03/24/2015;03/25/2015;03/28/2015;03/30/2015;04/05/2015;04/08/2015;
-;http://dlang.org/;D Programming Language: Home;50;50;50;50;50;50;50;50;50;
-;http://dlang.org/overview.html;Overview - D Programming Language;49;49;49;49;49;49;49;49;49;
-;http://en.wikipedia.org/wiki/D_%28programming_language%29;D (programming language) - Wikipedia, the free encyclopedia;48;48;48;48;48;48;48;48;48;
-;http://stackoverflow.com/questions/743319/why-isnt-the-d-language-picking-up;Why isn't the 'D' language picking up? - Stack Overflow;47;36;47;39;42;46;46;45;45;
-;http://www.amazon.com/The-Programming-Language-Andrei-Alexandrescu/dp/0321635361;Amazon.com: The D Programming Language ...;46;47;46;46;46;45;45;47;47;
-;http://www.drdobbs.com/mobile/facebook-adopts-d-language/240162694;Facebook Adopts D Language | Dr Dobb's;45;37;44;34;36;44;42;42;42;
-;http://ddili.org/ders/d.en/;Programming in D - Programming in D - D Programlama Dili;44;46;42;45;45;43;43;44;44;
-;http://www.digitalmars.com/d/1.0/;Intro - D Programming Language 1.0 - Digital Mars;43;35;45;0;0;47;47;46;46;
-;http://www.dsource.org/;dsource.org: home;42;45;41;40;39;39;37;39;38;
-;https://twitter.com/d_programming;D Language (@D_Programming) | Twitter;41;43;38;41;41;40;38;40;39;
-;http://dconf.org/;The D Programming Language Conference 2015;40;44;39;47;47;41;41;43;43;
-;https://github.com/D-Programming-Language;D Programming Language · GitHub;39;42;43;44;44;42;40;41;41;
-;https://github.com/D-Programming-Language/phobos;D-Programming-Language/phobos · GitHub;38;41;0;0;0;0;0;0;0;
-;http://www.wired.com/2014/07/d-programming-language/;The Next Big Programming Language You've Never Heard ...;37;0;37;32;34;38;36;38;37;
-;http://www.dprogramming.com/;Dprogramming.com - The D programming language;36;38;36;35;37;37;34;37;36;
-;http://dgcc.sourceforge.net/;GDC - D Programming Language for GCC;35;40;35;37;38;35;33;34;34;
-;http://erdani.com/index.php/books/tdpl/;The D Programming Language - Andrei Alexandrescu;34;34;40;38;40;36;35;36;40;
-;http://twit.tv/show/floss-weekly/311;FLOSS Weekly 311 | TWiT.TV;33;33;33;31;33;32;30;32;33;
-;http://channel9.msdn.com/Events/Lang-NEXT/Lang-NEXT-2012/The-D-Programming-Language;Walter Bright: The D Programming Language - Channel 9;32;0;0;0;0;0;0;0;31;
-;http://www.informit.com/articles/article.aspx?p=1381876;"D"iving Into the D Programming Language | 1.1 Numbers ...;31;0;31;0;0;31;29;29;30;
-;http://www.reddit.com/r/d_language/;D Programming Language - Reddit;30;32;30;33;35;33;31;30;32;
-;http://www.youtube.com/watch?v=sbgkmw2KyLw;1. D Programming Language: Getting started - YouTube;29;0;25;0;0;27;25;26;27;
-;http://developers.slashdot.org/story/15/01/20/2026221/is-d-an-underrated-programming-language;Is D an Underrated Programming Language? - Slashdot;28;30;32;30;32;29;27;20;24;
-;http://en.wikibooks.org/wiki/D_%28The_Programming_Language%29/d2/Hello,_World!;D (The Programming Language)/d2/Hello, World! - Wikibooks;27;31;26;28;30;26;24;27;28;
-;http://www.bitwisemag.com/copy/programming/d/opinion/d_programming_language.html;Bitwise Magazine :: D Programming Language;26;0;27;0;0;25;23;15;19;
-;http://gdcproject.org/;GDC - D Programming Language for GCC;25;29;28;29;31;28;26;28;29;
-;http://www.fastcolabs.com/3019887/facebook-adds-5000-lines-of-d-language-code-whats-that-mean;Facebook Adds 5,000 Lines of D-Language Code--What's ...;24;0;0;0;0;0;0;0;0;
-;http://zeusedit.com/d.html;Zeus - D Language IDE for Windows (dlang);23;26;22;25;28;24;22;19;22;
-;http://www.compileonline.com/compile_d_online.php;Compile and Execute D Online;22;27;21;0;0;0;0;0;0;
-;https://dnet.codeplex.com/;D Compiler for .NET - Home;21;24;17;23;27;18;16;18;15;
-;http://www.infoworld.com/article/2619996/application-development/objective-c--c---d-language--winners-in-programming-popularity.html;Objective-C, C#, D language: Winners in programming ...;20;0;23;0;0;22;20;21;23;
-;https://wiki.archlinux.org/index.php/D_%28programming_language%29;D (programming language) - ArchWiki;19;0;14;0;0;16;14;17;20;
-;http://komodoide.com/resources/languages/robkellett--dlanguage/;D Language | Komodo IDE;18;22;11;20;24;0;0;0;0;
-;http://www.phoronix.com/scan.php?page=news_item&px=MTM5MTg;D Language Still Showing Promise, Advancements - Phoronix;17;0;18;0;0;19;17;16;13;
-;http://code.google.com/p/qtd/;qtd - Bindings of Qt GUI library to D programming language ...;16;21;10;21;25;12;10;10;11;
-;http://leonardo-m.livejournal.com/111598.html;leonardo - K-Nearest Neighbor in D language;15;6;0;0;0;0;0;0;0;
-;https://www.facebook.com/dlang.org;D Programming Language | Facebook;14;18;13;19;23;13;11;13;17;
-;http://blog.travis-ci.com/2014-12-10-community-driven-language-support-comes-to-travis-ci/;The Travis CI Blog: Community-Driven Language Support ...;13;17;8;16;18;11;8;9;9;
-;http://prowiki.org/wiki4d/;Wiki4D: FrontPage - prowiki.org;12;14;4;12;15;5;0;0;0;
-;http://wiki.osdev.org/D_Bare_Bones;D Bare Bones - OSDev Wiki;11;20;6;17;19;9;7;4;7;
-;https://atom.io/packages/language-d;language-d - Atom;10;15;12;18;22;14;12;14;21;
-;https://www.sociomantic.com/jobs/d-software-developer/;Software Developer (D language) - Sociomantic Labs;9;13;0;0;0;0;0;0;0;
-;http://news.dice.com/2015/01/20/state-d-2015/;The State of D in 2015 - Dice News;8;12;0;0;7;0;0;5;18;
-;http://muldis.com/Muldis_D.html;Muldis Data Systems - About Muldis D;7;16;15;22;26;15;13;12;16;
-;http://www.thefreecountry.com/compilers/d.shtml;Free D Compilers and Interpreters - thefreecountry.com;6;11;2;11;14;3;1;1;5;
-;http://bartoszmilewski.com/category/d-programming-language/;D Programming Language | Bartosz Milewski's ...;5;0;7;0;0;0;0;0;0;
-;http://www.vim.org/scripts/script.php?script_id=379;d.vim - Syntax file for the D programming language. : vim ...;4;0;5;0;0;7;5;11;10;
-;http://www.bearcave.com/software/dlang/Cplus_plus_and_d.html;The D Language: A Successor to C++ - Bearcave.com;3;0;0;0;0;1;0;0;0;
-;http://www.quora.com/D-programming-language;D (programming language) - Quora;2;0;0;0;0;0;0;0;0;
-;http://www.amazon.co.uk/The-Programming-Language-Andrei-Alexandrescu/dp/0321635361;The D Programming Language: Amazon.co.uk: Andrei ...;1;7;0;4;6;4;2;0;2;
-;http://rainers.github.io/visuald/visuald/StartPage.html;Visual D - D Programming Language - GitHub Pages;0;39;34;36;0;34;32;33;0;
-;http://language.usc.edu/languages/dclearance.html;The Language Center: D-Clearance;0;28;20;27;29;21;19;25;26;
-;http://www.cdatribe-nsn.gov/langsite/language.aspx;Coeur d' Alene Tribe - Language Dept;0;25;19;26;0;20;18;24;0;
-;http://www.criticalthinking.com/language-smarts-level-d.html;Language Smarts™ Level D - The Critical Thinking Co.;0;23;16;24;0;17;15;22;0;
-;http://www.youtube.com/watch?v=Hxh2dVN3osU;D Language Overview: FLOSS Weekly 311 - YouTube;0;19;0;0;0;0;0;0;0;
-;http://www.quora.com/Of-the-emerging-systems-languages-Rust-D-Go-and-Nim-which-is-the-strongest-language-and-why;Of the emerging systems languages Rust, D, Go and Nim ...;0;10;0;14;17;8;6;0;0;
-;http://www.academia.edu/5436533/3-D_Language_Acquisition_Test_Evaluation_of_Language_Within_a_Pragmatic_Framework;3-D Language Acquisition Test - Academia.edu;0;9;1;13;16;2;0;0;1;
-;http://www.wunderground.com/weather/api/d/docs?d=language-support;Language Support - Weather Underground;0;8;0;9;9;0;0;3;0;
-;http://reference.wolfram.com/language/ref/D.html;D—Wolfram Language Documentation;0;5;0;0;0;0;0;0;0;
-;http://www.newyorker.com/culture/richard-brody/jean-luc-godards-3-d-movie;Godard's Revolutionary 3-D Film - The New Yorker;0;4;0;6;0;0;0;0;0;
-;http://languageofcaring.com/team_member/wendy-leebov/;Wendy Leebov, Ed.D.: Language of Caring;0;3;0;7;8;0;0;0;0;
-;http://www.lakeshorelearning.com/product/productDetBySkuCode.jsp?product_code=DD336;Building Language 3-D Lotto at Lakeshore Learning;0;2;0;0;0;0;0;0;0;
-;http://blog.experimentalworks.net/2015/01/the-d-language-a-sweet-spot-between-python-and-c/;The D Language: A sweet-spot between Python and C ...;0;1;0;0;1;0;44;35;35;
-;https://channel9.msdn.com/Events/Lang-NEXT/Lang-NEXT-2012/The-D-Programming-Language;Walter Bright: The D Programming Language - Channel 9;0;0;29;0;0;30;28;31;0;
-;http://www.fastcolabs.com/3019948/more-about-d-language-and-why-facebook-is-experimenting-with-it;More About D-Language, And Why Facebook Is ... - Co.Labs;0;0;24;0;0;23;21;23;25;
-;https://plugins.jetbrains.com/wishlist/show?pr=&wid=406;D language support - JetBrains Plugin Repository;0;0;9;15;21;20;10;8;12;
-;http://docs.oracle.com/cd/E37670_01/E37355/html/ol_language_dtrace.html;13.6 Introducing the D Programming Language;0;0;3;0;0;6;4;7;4;
-;https://github.com/D-Programming-Language/dmd;D-Programming-Language/dmd · GitHub;0;0;0;43;0;0;39;0;0;
-;http://www.digitalmars.com/;Digital Mars C, C++ and D Compilers;0;0;0;42;43;0;0;0;0;
-;http://www.conversationexchange.com/resources/keyboard-language.php;How to change keyboard language in Windows;0;0;0;10;12;0;0;0;0;
-;https://reference.wolfram.com/language/ref/D.html;D—Wolfram Language Documentation;0;0;0;8;11;0;0;2;6;
-;https://www.kickstarter.com/projects/1975355456/madeup-a-programming-language-for-3-d-models;Madeup: a Programming Language for 3-D Models by Chris ...;0;0;0;5;5;0;0;0;0;
-;http://www.acara.edu.au/curriculum/eald_teacher_resource/eald_teacher_resource.html;English as an Additional Language or Dialect: Teacher ...;0;0;0;3;10;0;0;0;0;
-;http://www.docwiki.net/view.php?pageid=14;General syntax - D programming language documentation;0;0;0;2;4;0;0;0;0;
-;http://news.digipen.edu/industry/qa-walter-bright-inventor-d-language/;Q&A with Walter Bright, Inventor of D Language — DigiPen ...;0;0;0;1;3;0;0;0;0;
-;http://rainers.github.io/visuald/visuald/VersionHistory.html;Version History - D Programming Language - GitHub Pages;0;0;0;0;13;0;0;0;0;
-;http://www.youtube.com/watch?v=KuabN0z4hxg;FLOSS Weekly 311: The D Language - YouTube;0;0;0;0;2;0;0;0;0;
-;http://www.prowiki.org/wiki4d/wiki.cgi;Wiki4D: FrontPage - prowiki.org;0;0;0;0;0;0;3;0;14;
-;http://www.quora.com/Which-companies-use-Rust-and-D-language;Which companies use Rust and D language? - Quora;0;0;0;0;0;0;0;6;8;
-;http://rosettacode.org/wiki/Category:D;Category:D - Rosetta Code;0;0;0;0;0;0;0;0;3;
+Relevance;Url;Title;3/11/2015;3/12/2015;3/23/2015;3/24/2015;3/25/2015;3/28/2015;3/30/2015;4/5/2015;4/8/2015;4/10/2015
+5;http://dlang.org/;D Programming Language: Home;50;50;50;50;50;50;50;50;50;50
+5;http://dlang.org/overview.html;Overview - D Programming Language;49;49;49;49;49;49;49;49;49;49
+5;http://en.wikipedia.org/wiki/D_%28programming_language%29;D (programming language) - Wikipedia, the free encyclopedia;48;48;48;48;48;48;48;48;48;48
+3;http://stackoverflow.com/questions/743319/why-isnt-the-d-language-picking-up;Why isn't the 'D' language picking up? - Stack Overflow;47;36;47;39;42;46;46;45;45;46
+5;http://www.amazon.com/The-Programming-Language-Andrei-Alexandrescu/dp/0321635361;Amazon.com: The D Programming Language ...;46;47;46;46;46;45;45;47;47;47
+4;http://www.drdobbs.com/mobile/facebook-adopts-d-language/240162694;Facebook Adopts D Language | Dr Dobb's;45;37;44;34;36;44;42;42;42;43
+5;http://ddili.org/ders/d.en/;Programming in D - Programming in D - D Programlama Dili;44;46;42;45;45;43;43;44;44;45
+3;http://www.digitalmars.com/d/1.0/;Intro - D Programming Language 1.0 - Digital Mars;43;35;45;0;0;47;47;46;46;44
+3;http://www.dsource.org/;dsource.org: home;42;45;41;40;39;39;37;39;38;38
+4;https://twitter.com/d_programming;D Language (@D_Programming) | Twitter;41;43;38;41;41;40;38;40;39;41
+4;http://dconf.org/;The D Programming Language Conference 2015;40;44;39;47;47;41;41;43;43;42
+5;https://github.com/D-Programming-Language;D Programming Language · GitHub;39;42;43;44;44;42;40;41;41;39
+5;https://github.com/D-Programming-Language/phobos;D-Programming-Language/phobos · GitHub;38;41;0;0;0;0;0;0;0;0
+4;http://www.wired.com/2014/07/d-programming-language/;The Next Big Programming Language You've Never Heard ...;37;0;37;32;34;38;36;38;37;36
+4;http://www.dprogramming.com/;Dprogramming.com - The D programming language;36;38;36;35;37;37;34;37;36;37
+4;http://dgcc.sourceforge.net/;GDC - D Programming Language for GCC;35;40;35;37;38;35;33;34;34;34
+3;http://erdani.com/index.php/books/tdpl/;The D Programming Language - Andrei Alexandrescu;34;34;40;38;40;36;35;36;40;40
+4;http://twit.tv/show/floss-weekly/311;FLOSS Weekly 311 | TWiT.TV;33;33;33;31;33;32;30;32;33;32
+4;http://channel9.msdn.com/Events/Lang-NEXT/Lang-NEXT-2012/The-D-Programming-Language;Walter Bright: The D Programming Language - Channel 9;32;0;0;0;0;0;0;0;31;30
+4;http://www.informit.com/articles/article.aspx?p=1381876;Diving Into the D Programming Language | 1.1 Numbers ...;31;0;31;0;0;31;29;29;30;29
+3;http://www.reddit.com/r/d_language/;D Programming Language - Reddit;30;32;30;33;35;33;31;30;32;31
+4;http://www.youtube.com/watch?v=sbgkmw2KyLw;1. D Programming Language: Getting started - YouTube;29;0;25;0;0;27;25;26;27;25
+4;http://developers.slashdot.org/story/15/01/20/2026221/is-d-an-underrated-programming-language;Is D an Underrated Programming Language? - Slashdot;28;30;32;30;32;29;27;20;24;27
+4;http://en.wikibooks.org/wiki/D_%28The_Programming_Language%29/d2/Hello,_World!;D (The Programming Language)/d2/Hello, World! - Wikibooks;27;31;26;28;30;26;24;27;28;24
+4;http://www.bitwisemag.com/copy/programming/d/opinion/d_programming_language.html;Bitwise Magazine :: D Programming Language;26;0;27;0;0;25;23;15;19;16
+4;http://gdcproject.org/;GDC - D Programming Language for GCC;25;29;28;29;31;28;26;28;29;26
+4;http://www.fastcolabs.com/3019887/facebook-adds-5000-lines-of-d-language-code-whats-that-mean;Facebook Adds 5,000 Lines of D-Language Code--What's ...;24;0;0;0;0;0;0;0;0;0
+3;http://zeusedit.com/d.html;Zeus - D Language IDE for Windows (dlang);23;26;22;25;28;24;22;19;22;19
+2;http://www.compileonline.com/compile_d_online.php;Compile and Execute D Online;22;27;21;0;0;0;0;0;0;0
+3;https://dnet.codeplex.com/;D Compiler for .NET - Home;21;24;17;23;27;18;16;18;15;13
+3;http://www.infoworld.com/article/2619996/application-development/objective-c--c---d-language--winners-in-programming-popularity.html;Objective-C, C#, D language: Winners in programming ...;20;0;23;0;0;22;20;21;23;20
+3;https://wiki.archlinux.org/index.php/D_%28programming_language%29;D (programming language) - ArchWiki;19;0;14;0;0;16;14;17;20;17
+3;http://komodoide.com/resources/languages/robkellett--dlanguage/;D Language | Komodo IDE;18;22;11;20;24;0;0;0;0;0
+3;http://www.phoronix.com/scan.php?page=news_item&px=MTM5MTg;D Language Still Showing Promise, Advancements - Phoronix;17;0;18;0;0;19;17;16;13;10
+2;http://code.google.com/p/qtd/;qtd - Bindings of Qt GUI library to D programming language ...;16;21;10;21;25;12;10;10;11;9
+2;http://leonardo-m.livejournal.com/111598.html;leonardo - K-Nearest Neighbor in D language;15;6;0;0;0;0;0;0;0;0
+4;https://www.facebook.com/dlang.org;D Programming Language | Facebook;14;18;13;19;23;13;11;13;17;15
+2;http://blog.travis-ci.com/2014-12-10-community-driven-language-support-comes-to-travis-ci/;The Travis CI Blog: Community-Driven Language Support ...;13;17;8;16;18;11;8;9;9;7
+3;http://prowiki.org/wiki4d/;Wiki4D: FrontPage - prowiki.org;12;14;4;12;15;5;0;0;0;0
+3;http://wiki.osdev.org/D_Bare_Bones;D Bare Bones - OSDev Wiki;11;20;6;17;19;9;7;4;7;4
+3;https://atom.io/packages/language-d;language-d - Atom;10;15;12;18;22;14;12;14;21;18
+3;https://www.sociomantic.com/jobs/d-software-developer/;Software Developer (D language) - Sociomantic Labs;9;13;0;0;0;0;0;0;0;0
+3;http://news.dice.com/2015/01/20/state-d-2015/;The State of D in 2015 - Dice News;8;12;0;0;7;0;0;5;18;5
+1;http://muldis.com/Muldis_D.html;Muldis Data Systems - About Muldis D;7;16;15;22;26;15;13;12;16;14
+3;http://www.thefreecountry.com/compilers/d.shtml;Free D Compilers and Interpreters - thefreecountry.com;6;11;2;11;14;3;1;1;5;2
+3;http://bartoszmilewski.com/category/d-programming-language/;D Programming Language | Bartosz Milewski's ...;5;0;7;0;0;0;0;0;0;0
+3;http://www.vim.org/scripts/script.php?script_id=379;d.vim - Syntax file for the D programming language. : vim ...;4;0;5;0;0;7;5;11;10;8
+3;http://www.bearcave.com/software/dlang/Cplus_plus_and_d.html;The D Language: A Successor to C++ - Bearcave.com;3;0;0;0;0;1;0;0;0;0
+3;http://www.quora.com/D-programming-language;D (programming language) - Quora;2;0;0;0;0;0;0;0;0;0
+3;http://www.amazon.co.uk/The-Programming-Language-Andrei-Alexandrescu/dp/0321635361;The D Programming Language: Amazon.co.uk: Andrei ...;1;7;0;4;6;4;2;0;2;0
+4;http://rainers.github.io/visuald/visuald/StartPage.html;Visual D - D Programming Language - GitHub Pages;0;39;34;36;0;34;32;33;0;33
+1;http://language.usc.edu/languages/dclearance.html;The Language Center: D-Clearance;0;28;20;27;29;21;19;25;26;22
+1;http://www.cdatribe-nsn.gov/langsite/language.aspx;Coeur d' Alene Tribe - Language Dept;0;25;19;26;0;20;18;24;0;23
+1;http://www.criticalthinking.com/language-smarts-level-d.html;Language Smarts™ Level D - The Critical Thinking Co.;0;23;16;24;0;17;15;22;0;21
+4;http://www.youtube.com/watch?v=Hxh2dVN3osU;D Language Overview: FLOSS Weekly 311 - YouTube;0;19;0;0;0;0;0;0;0;0
+2;http://www.quora.com/Of-the-emerging-systems-languages-Rust-D-Go-and-Nim-which-is-the-strongest-language-and-why;Of the emerging systems languages Rust, D, Go and Nim ...;0;10;0;14;17;8;6;0;0;0
+1;http://www.academia.edu/5436533/3-D_Language_Acquisition_Test_Evaluation_of_Language_Within_a_Pragmatic_Framework;3-D Language Acquisition Test - Academia.edu;0;9;1;13;16;2;0;0;1;0
+1;http://www.wunderground.com/weather/api/d/docs?d=language-support;Language Support - Weather Underground;0;8;0;9;9;0;0;3;0;0
+1;http://reference.wolfram.com/language/ref/D.html;D—Wolfram Language Documentation;0;5;0;0;0;0;0;0;0;0
+1;http://www.newyorker.com/culture/richard-brody/jean-luc-godards-3-d-movie;Godard's Revolutionary 3-D Film - The New Yorker;0;4;0;6;0;0;0;0;0;0
+1;http://languageofcaring.com/team_member/wendy-leebov/;Wendy Leebov, Ed.D.: Language of Caring;0;3;0;7;8;0;0;0;0;0
+1;http://www.lakeshorelearning.com/product/productDetBySkuCode.jsp?product_code=DD336;Building Language 3-D Lotto at Lakeshore Learning;0;2;0;0;0;0;0;0;0;0
+3;http://blog.experimentalworks.net/2015/01/the-d-language-a-sweet-spot-between-python-and-c/;The D Language: A sweet-spot between Python and C ...;0;1;0;0;1;0;44;35;35;35
+4;https://channel9.msdn.com/Events/Lang-NEXT/Lang-NEXT-2012/The-D-Programming-Language;Walter Bright: The D Programming Language - Channel 9;0;0;29;0;0;30;28;31;0;0
+3;http://www.fastcolabs.com/3019948/more-about-d-language-and-why-facebook-is-experimenting-with-it;More About D-Language, And Why Facebook Is ... - Co.Labs;0;0;24;0;0;23;21;23;25;28
+3;https://plugins.jetbrains.com/wishlist/show?pr=&wid=406;D language support - JetBrains Plugin Repository;0;0;9;15;21;20;10;8;12;11
+1;http://docs.oracle.com/cd/E37670_01/E37355/html/ol_language_dtrace.html;13.6 Introducing the D Programming Language;0;0;3;0;0;6;4;7;4;1
+5;https://github.com/D-Programming-Language/dmd;D-Programming-Language/dmd · GitHub;0;0;0;43;0;0;39;0;0;0
+4;http://www.digitalmars.com/;Digital Mars C, C++ and D Compilers;0;0;0;42;43;0;0;0;0;0
+1;http://www.conversationexchange.com/resources/keyboard-language.php;How to change keyboard language in Windows;0;0;0;10;12;0;0;0;0;0
+1;https://reference.wolfram.com/language/ref/D.html;D—Wolfram Language Documentation;0;0;0;8;11;0;0;2;6;3
+1;https://www.kickstarter.com/projects/1975355456/madeup-a-programming-language-for-3-d-models;Madeup: a Programming Language for 3-D Models by Chris ...;0;0;0;5;5;0;0;0;0;0
+1;http://www.acara.edu.au/curriculum/eald_teacher_resource/eald_teacher_resource.html;English as an Additional Language or Dialect: Teacher ...;0;0;0;3;10;0;0;0;0;0
+3;http://www.docwiki.net/view.php?pageid=14;General syntax - D programming language documentation;0;0;0;2;4;0;0;0;0;0
+4;http://news.digipen.edu/industry/qa-walter-bright-inventor-d-language/;Q&A with Walter Bright, Inventor of D Language — DigiPen ...;0;0;0;1;3;0;0;0;0;0
+4;http://rainers.github.io/visuald/visuald/VersionHistory.html;Version History - D Programming Language - GitHub Pages;0;0;0;0;13;0;0;0;0;0
+4;http://www.youtube.com/watch?v=KuabN0z4hxg;FLOSS Weekly 311: The D Language - YouTube;0;0;0;0;2;0;0;0;0;0
+3;http://www.prowiki.org/wiki4d/wiki.cgi;Wiki4D: FrontPage - prowiki.org;0;0;0;0;0;0;3;0;14;12
+2;http://www.quora.com/Which-companies-use-Rust-and-D-language;Which companies use Rust and D language? - Quora;0;0;0;0;0;0;0;6;8;6
+2;http://rosettacode.org/wiki/Category:D;Category:D - Rosetta Code;0;0;0;0;0;0;0;0;3;0
